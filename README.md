@@ -5,13 +5,16 @@ I think a adventage of my function that it can make you more comfort if you use 
 I will show about new feeling of my function when you want to make some website with php
 
 Old:
+```
 <html>
   <body class="body">
     1 2 3 4 5 6 7 8 9 10 11 12
   </body>
 </html>
+```
 
 My function:
+```
 <?php
   html();
     body('class="body"');
@@ -20,3 +23,4 @@ My function:
     body_end();
   html_end();
 ?>
+```
