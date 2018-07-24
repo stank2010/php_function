@@ -24,3 +24,19 @@ My function:
   html_end();
 ?>
 ```
+you can use function ```tag()``` for make html ```<tag>``` (tag is name of html tag)
+and use ```tag_end()``` for close tag ,it like ```</tag>```
+
+so name of tag that I have in my function is:
+"div",
+"html",
+"body",
+"head",
+"table",
+"th",
+"tr",
+"td",
+"a",
+"p",
+"form",
+"input"
