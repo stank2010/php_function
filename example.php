@@ -1,5 +1,5 @@
 <?php
-	include "gen_function.php";
+	include "html_function.php";
 
 	
 	$A = array("name","class","talk","detail");
@@ -16,26 +16,26 @@
 		}
 	}
 
-	html();
-		body();
-			show('table<br>');
-			table('border="1"');
+	h_html();
+		h_body();
+			h_print('table<br>');
+			h_table('border="1"');
 				foreach($A as $a)
 				{
-					th();
-						show($a);
-					th_end();
+					h_th();
+						h_print($a);
+					h_th_end();
 				}
 				
-				tr();
+				h_tr();
 					each_all('td',$data_1);
-				tr_end();
+				h_tr_end();
 				
-				tr();
+				h_tr();
 					each_all('td',$data_2);
-				tr_end();
+				h_tr_end();
 				
-			table_end();
-		body_end();
-	html_end();
+			h_table_end();
+		h_body_end();
+	h_html_end();
 ?>
