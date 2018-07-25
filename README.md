@@ -13,30 +13,20 @@ Old:
 </html>
 ```
 
-My function:
+New:
 ```
 <?php
-  html();
-    body('class="body"');
+  include_once("html_function.php");
+  h_html();
+    h_body('class="body"');
       for($i=1;$i<=12;$i++)
-        show($i.' ');
-    body_end();
-  html_end();
+        h_print($i.' ');
+    h_body_end();
+  h_html_end();
 ?>
 ```
-you can use function ```tag()``` for make html ```<tag>``` (tag is name of html tag)
-and use ```tag_end()``` for close tag ,it like ```</tag>```
+you can use function ```h_tag()``` for make html ```<tag>``` (tag is name of html tag)
+and use ```h_tag_end()``` for close tag ,it like ```</tag>```
 
 so name of tag that I have in my function is:
-"div",
-"html",
-"body",
-"head",
-"table",
-"th",
-"tr",
-"td",
-"a",
-"p",
-"form",
-"input"
+Almost every tags but doctype (and not support in html5 ones)
